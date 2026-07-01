@@ -1,176 +1,148 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SJ - Home</title>
-    <meta name="description" content="A static portfolio template based on sj.land.">
-    <meta property="og:image" content="assets/og/index.png">
-    <link rel="icon" href="favicon.gif" type="image/gif">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A clean, minimal personal portfolio." />
+    <title>Cleanfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <aside class="sidebar" aria-label="Primary">
-      <a class="logo-link" href="#home" aria-label="SJ home">
-        <img src="assets/logo.png" alt="SJ logo">
-      </a>
+    <div class="app light" id="top">
+      <header class="header center">
+        <h3><a href="#top" class="link">JS.</a></h3>
+        <nav class="center nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li class="nav__list-item"><a href="#about" class="link link--nav">About</a></li>
+            <li class="nav__list-item"><a href="#projects" class="link link--nav">Projects</a></li>
+            <li class="nav__list-item"><a href="#skills" class="link link--nav">Skills</a></li>
+            <li class="nav__list-item"><a href="#contact" class="link link--nav">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
-      <nav class="nav">
-        <a class="nav-link active" href="#home">
-          <img src="assets/icons/recents.svg" alt="">
-          <span>Home</span>
-          <kbd>1</kbd>
-        </a>
-        <a class="nav-link" href="#about">
-          <img src="assets/icons/about.svg" alt="">
-          <span>About</span>
-          <kbd>2</kbd>
-        </a>
-        <a class="nav-link" href="#projects">
-          <img src="assets/icons/projects.svg" alt="">
-          <span>Projects</span>
-          <kbd>3</kbd>
-        </a>
-        <a class="nav-link" href="#writing">
-          <img src="assets/icons/edit-3.svg" alt="">
-          <span>Writing</span>
-          <kbd>4</kbd>
-        </a>
-        <p class="nav-divider">Stay in touch</p>
-        <a class="nav-link" href="https://twitter.com/sjzhang_" target="_blank" rel="noopener noreferrer">
-          <img src="assets/icons/twitter.svg" alt="">
-          <span>Twitter</span>
-        </a>
-      </nav>
-
-      <div class="theme-switcher" aria-label="Theme choices">
-        <button type="button" aria-pressed="true">Light</button>
-        <button type="button">Dark</button>
-        <button type="button">Auto</button>
-      </div>
-    </aside>
-
-    <main id="home" class="page">
-      <section class="hero-section" aria-labelledby="greeting">
-        <h1 id="greeting">Hello</h1>
-        <p class="tiny-text">My name is SJ. Welcome to sj.land. This static template mirrors the original site's calm personal dashboard style for GitHub Pages.</p>
-      </section>
-
-      <section class="section" id="about" aria-labelledby="about-title">
-        <div class="section-header">
-          <h2 id="about-title">Updates</h2>
-          <a href="#projects">View All</a>
-        </div>
-        <div class="updates-grid">
-          <article class="update-card">
-            <span class="tag">Career</span>
-            <h3>Joined Coinbase Institutional</h3>
-            <p>Designing tools for builders, investors, and teams working in crypto markets.</p>
-            <time datetime="2024-01-01">2024</time>
-          </article>
-          <article class="update-card with-image">
-            <img src="assets/projects/compound.png" alt="Compound project preview">
-            <span class="tag">Project</span>
-            <h3>Compound</h3>
-            <p>Product design work across finance, onboarding, research, and membership workflows.</p>
-            <time datetime="2023-01-01">2023</time>
-          </article>
-          <article class="update-card with-image">
-            <img src="assets/projects/magik.png" alt="Magik project preview">
-            <span class="tag">Software</span>
-            <h3>Magik</h3>
-            <p>A concise visual system for operating AI workflows and business automation.</p>
-            <time datetime="2022-01-01">2022</time>
-          </article>
-          <article class="update-card">
-            <span class="tag">Writing</span>
-            <h3>The Long Game</h3>
-            <p>Notes on choosing a career path that compounds through curiosity and craft.</p>
-            <time datetime="2022-01-01">2022</time>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="goods-title">
-        <div class="section-header">
-          <h2 id="goods-title">Aesthetic Goods</h2>
-          <a href="#store">View All</a>
-        </div>
-        <div class="goods-grid" id="store">
-          <article class="good-card">
-            <img src="assets/store/W01-01.jpg" alt="SJ Land store item in black">
-            <h3>W01</h3>
-            <p>Black</p>
-          </article>
-          <article class="good-card">
-            <img src="assets/store/W01-02.jpg" alt="SJ Land store item in silver">
-            <h3>W01</h3>
-            <p>Silver</p>
-          </article>
-          <article class="good-card">
-            <img src="assets/store/W01-03.jpg" alt="SJ Land store item detail">
-            <h3>W01</h3>
-            <p>Detail</p>
-          </article>
-          <article class="good-card">
-            <img src="assets/store/W01-04.jpg" alt="SJ Land store item packaging">
-            <h3>W01</h3>
-            <p>Packaging</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <div class="section-header">
-          <h2 id="projects-title">Projects</h2>
-          <a href="#writing">View All</a>
-        </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <img src="assets/projects/orbit.png" alt="Orbit project preview">
-            <div>
-              <h3>Orbit</h3>
-              <p>Interfaces for mapping complex systems into something browsable and tactile.</p>
+      <main>
+        <div class="about center" id="about">
+          <div class="about__header">
+            <img src="assets/img/avatar.svg" alt="John Smith" class="about__picture" />
+            <div class="about__intro">
+              <h1>Hi, I am <span class="about__name">John Smith.</span></h1>
+              <h2 class="about__role">A Front End Engineer.</h2>
+              <p class="about__desc">
+                Adipisicing sit fugit ullam unde aliquid sequi. Facilis soluta facilis
+                perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi
+                quisquam, illo ut quasi nemo ipsa cumque.
+              </p>
             </div>
-          </article>
-          <article class="project-card">
-            <img src="assets/projects/mixily.png" alt="Mixily project preview">
-            <div>
-              <h3>Mixily</h3>
-              <p>Event tools for small communities, organizers, and repeat gatherings.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+          </div>
 
-      <section class="section" id="writing" aria-labelledby="reading-title">
-        <div class="section-header">
-          <h2 id="reading-title">Reading List</h2>
-          <a href="#home">Back Top</a>
+          <div class="about__contact center">
+            <a href="https://example.com"><span class="btn btn--outline">Resume</span></a>
+            <a href="https://github.com" aria-label="github" class="link link--icon">
+              <img src="assets/img/github.svg" alt="GitHub" class="icon" />
+            </a>
+            <a href="https://linkedin.com" aria-label="linkedin" class="link link--icon">
+              <img src="assets/img/linkedin.svg" alt="LinkedIn" class="icon" />
+            </a>
+          </div>
         </div>
-        <div class="reading-grid">
-          <article>
-            <span>Book</span>
-            <h3>Designing for the Long Run</h3>
-            <p>Collected notes about durable products, taste, and financial systems.</p>
-          </article>
-          <article>
-            <span>Essay</span>
-            <h3>My 2022 Investment Thesis</h3>
-            <p>A snapshot of markets, crypto infrastructure, and the businesses worth watching.</p>
-          </article>
-          <article>
-            <span>Newsletter</span>
-            <h3>Bits About Money</h3>
-            <p>Payment systems, financial infrastructure, and practical internet business.</p>
-          </article>
-          <article>
-            <span>Podcast</span>
-            <h3>Invest Like the Best</h3>
-            <p>Longform conversations about company building, markets, and strategy.</p>
-          </article>
-        </div>
-      </section>
-    </main>
+
+        <section id="projects" class="section projects">
+          <h2 class="section__title">Projects</h2>
+
+          <div class="projects__grid">
+            <div class="project">
+              <img src="assets/img/project.svg" alt="Project 1 screenshot" style="width: 100%; object-fit: cover" />
+              <h3>Project 1</h3>
+              <p class="project__description">
+                Amet asperiores et impedit aliquam consectetur. Voluptates sed a nulla ipsa
+                officia et esse aliquam.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">SASS</li>
+                <li class="project__stack-item">TypeScript</li>
+                <li class="project__stack-item">React</li>
+              </ul>
+              <a href="https://github.com" aria-label="source code" class="link link--icon">
+                <img src="assets/img/github.svg" alt="Source code" class="icon" />
+              </a>
+              <a href="https://github.com" aria-label="live preview" class="link link--icon">
+                <img src="assets/img/external.svg" alt="Live preview" class="icon" />
+              </a>
+            </div>
+
+            <div class="project">
+              <img src="assets/img/project.svg" alt="Project 2 screenshot" style="width: 100%; object-fit: cover" />
+              <h3>Project 2</h3>
+              <p class="project__description">
+                Amet asperiores et impedit aliquam consectetur. Voluptates sed a nulla ipsa
+                officia et esse aliquam.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">SASS</li>
+                <li class="project__stack-item">TypeScript</li>
+                <li class="project__stack-item">React</li>
+              </ul>
+              <a href="https://github.com" aria-label="source code" class="link link--icon">
+                <img src="assets/img/github.svg" alt="Source code" class="icon" />
+              </a>
+              <a href="https://github.com" aria-label="live preview" class="link link--icon">
+                <img src="assets/img/external.svg" alt="Live preview" class="icon" />
+              </a>
+            </div>
+
+            <div class="project">
+              <img src="assets/img/project.svg" alt="Project 3 screenshot" style="width: 100%; object-fit: cover" />
+              <h3>Project 3</h3>
+              <p class="project__description">
+                Amet asperiores et impedit aliquam consectetur. Voluptates sed a nulla ipsa
+                officia et esse aliquam.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">SASS</li>
+                <li class="project__stack-item">TypeScript</li>
+                <li class="project__stack-item">React</li>
+              </ul>
+              <a href="https://github.com" aria-label="source code" class="link link--icon">
+                <img src="assets/img/github.svg" alt="Source code" class="icon" />
+              </a>
+              <a href="https://github.com" aria-label="live preview" class="link link--icon">
+                <img src="assets/img/external.svg" alt="Live preview" class="icon" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section skills" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <ul class="skills__list">
+            <li class="skills__list-item btn btn--plain">HTML</li>
+            <li class="skills__list-item btn btn--plain">CSS</li>
+            <li class="skills__list-item btn btn--plain">JavaScript</li>
+            <li class="skills__list-item btn btn--plain">TypeScript</li>
+            <li class="skills__list-item btn btn--plain">React</li>
+            <li class="skills__list-item btn btn--plain">Redux</li>
+            <li class="skills__list-item btn btn--plain">SASS</li>
+            <li class="skills__list-item btn btn--plain">Git</li>
+          </ul>
+        </section>
+
+        <section class="section contact center" id="contact">
+          <h2 class="section__title">Contact</h2>
+          <a href="mailto:johnsmith@mail.com"><span class="btn btn--outline">Email me</span></a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <a href="https://github.com/rjshkhr/cleanfolio" class="link footer__link">Built with Cleanfolio</a>
+      </footer>
+    </div>
   </body>
 </html>
